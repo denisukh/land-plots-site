@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Талое — земельные участки</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="container header">
+      <a class="brand" href="index.html" aria-label="На главную">
+        <span class="brand-mark">З</span>
+        <span>Земельные участки</span>
+      </a>
+
+      <nav class="nav" aria-label="Основная навигация">
+        <a href="index.html#territories">Территории</a>
+        <a href="#plots">Участки</a>
+        <a href="#details">О территории</a>
+        <a href="#contacts">Контакты</a>
+      </nav>
+
+      <div class="header-contacts">
+        <a class="phone" href="tel:+70000000000">+7 000 000-00-00</a>
+        <a class="btn btn-primary" href="https://wa.me/70000000000">Написать</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="territory-hero">
+      <div class="container territory-hero-inner">
+        <div>
+          <div class="breadcrumbs">
+            <a href="index.html">Главная</a><span>/</span><a href="index.html#territories">Территории</a><span>/</span><span>Талое</span>
+          </div>
+          <span class="eyebrow">Территория</span>
+          <h1>Земельные участки в Талом</h1>
+          <p class="hero-text">Отдельная страница территории с картой участков, актуальными свободными вариантами и быстрым способом уточнить наличие. Реальное описание, расстояние до города и условия позже заменим на точные данные.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#plots">Смотреть карту</a>
+            <a class="btn btn-outline" href="#contacts">Уточнить наличие</a>
+          </div>
+        </div>
+
+        <aside class="hero-side-card">
+          <h2>Кратко о территории</h2>
+          <div class="quick-info">
+            <div class="quick-info-item"><span>Расстояние</span><strong>уточняется</strong></div>
+            <div class="quick-info-item"><span>Площадь участков</span><strong>уточняется</strong></div>
+            <div class="quick-info-item"><span>Статус</span><strong>есть карта</strong></div>
+            <div class="quick-info-item"><span>Рассрочка</span><strong>возможна</strong></div>
+          </div>
+          <p>На карте можно показать все участки цветом, а в списке оставить только свободные, чтобы не перегружать страницу.</p>
+          <div class="status-legend">
+            <span><i class="dot dot-free"></i> свободен</span>
+            <span><i class="dot dot-booked"></i> бронь</span>
+            <span><i class="dot dot-sold"></i> продан</span>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section" id="plots">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <div class="section-label">Карта участков</div>
+            <h2>Талое на карте</h2>
+          </div>
+          <p class="section-subtitle">Карта встроена из Яндекс Конструктора. На опубликованном сайте она должна открываться как интерактивная схема.</p>
+        </div>
+
+        <div class="map-layout">
+          <div class="map-box">
+            <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A3272f32bdbe64ae4487aafc661c2646285b3e624b539b9f6fa2300d5f464cb41&amp;source=constructor" loading="lazy" title="Карта участков в Талом"></iframe>
+          </div>
+
+          <aside class="panel">
+            <h3>Свободные участки</h3>
+            <p>Тестовый вариант: показываем 30 свободных участков, но не растягиваем страницу — список прокручивается внутри панели.</p>
+            <div class="available-top">
+              <span class="available-count">30 свободных</span>
+              <span style="color: var(--muted); font-size: 13px;">Талое</span>
+            </div>
+            <div class="available-list">
+              <div class="plot-card"><div><strong>Участок №1</strong><br><span>8,0 соток</span></div><span class="status-pill">свободен</span></div>
+              <div class="plot-card"><div><strong>Участок №2</strong><br><span>8,5 соток</span></div><span class="status-pill">свободен</span></div>
+              <div class="plot-card"><div><strong>Участок №3</strong><br><span>9,0 соток</span></div><span class="status-pill">свободен</span></div>
+              <div class="plot-card"><div><strong>Участок №4</strong><br><span>9,5 соток</span></div><span class="status-pill">свободен</span></div>
+              <div class="plot-card"><div><strong>Участок №5</strong><br><span>10,0 соток</span></div><span class="status-pill">свободен</span></div>
+              <div class="plot-card"><div><strong>Участок №6</strong><br><span>10,5 соток</span></div><span class="status-pill">свободен</span></div>
+              <div class="plot-card"><div><strong>Участок №7</strong><br><span>11,0 соток</span></div><span class="status-pill">свободен</span></div>
+              <div class="plot-card"><div><strong>Участок №8</strong><br><span>11,5 соток</span></div><span class="status-pill">свободен</span></div>
+              <div class="plot-card"><div><strong>Участок №9</strong><br><span>12,0 соток</span></div><span class="status-pill">свободен</span></div>
+              <div class="plot-card"><div><strong>Участок №10</strong><br><span>12,5 соток</span></div><span class="status-pill">свободен</span></div>
+              <div class="plot-card"><div><strong>Участок №11</strong><br><span>8,0 соток</span></div><span class="status-pill">свободен</span></div>
+              <div class="plot-card"><div><strong>Участок №12</strong><br><span>8,5 соток</span></div><span class="status-pill">свободен</span></div>
+              <div class="plot-card"><div><strong>Участок №13</strong><br><span>9,0 соток</span></div><span class="status-pill">свободен</span></div>
+              <div class="plot-card"><div><strong>Участок №14</strong><br><span>9,5 соток</span></div><span class="status-pill">свободен</span></div>
+              <div class="plot-card"><div><strong>Участок №15</strong><br><span>10,0 соток</span></div><span class="status-pill">свободен</span></div>
+              <div class="plot-card"><div><strong>Участок №16</strong><br><span>10,5 соток</span></div><span class="status-pill">свободен</span></div>
+              <div class="plot-card"><div><strong>Участок №17</strong><br><span>11,0 соток</span></div><span class="status-pill">свободен</span></div>
+              <div class="plot-card"><div><strong>Участок №18</strong><br><span>11,5 соток</span></div><span class="status-pill">свободен</span></div>
+              <div class="plot-card"><div><strong>Участок №19</strong><br><span>12,0 соток</span></div><span class="status-pill">свободен</span></div>
+              <div class="plot-card"><div><strong>Участок №20</strong><br><span>12,5 соток</span></div><span class="status-pill">свободен</span></div>
+              <div class="plot-card"><div><strong>Участок №21</strong><br><span>8,0 соток</span></div><span class="status-pill">свободен</span></div>
+              <div class="plot-card"><div><strong>Участок №22</strong><br><span>8,5 соток</span></div><span class="status-pill">свободен</span></div>
+              <div class="plot-card"><div><strong>Участок №23</strong><br><span>9,0 соток</span></div><span class="status-pill">свободен</span></div>
+              <div class="plot-card"><div><strong>Участок №24</strong><br><span>9,5 соток</span></div><span class="status-pill">свободен</span></div>
+              <div class="plot-card"><div><strong>Участок №25</strong><br><span>10,0 соток</span></div><span class="status-pill">свободен</span></div>
+              <div class="plot-card"><div><strong>Участок №26</strong><br><span>10,5 соток</span></div><span class="status-pill">свободен</span></div>
+              <div class="plot-card"><div><strong>Участок №27</strong><br><span>11,0 соток</span></div><span class="status-pill">свободен</span></div>
+              <div class="plot-card"><div><strong>Участок №28</strong><br><span>11,5 соток</span></div><span class="status-pill">свободен</span></div>
+              <div class="plot-card"><div><strong>Участок №29</strong><br><span>12,0 соток</span></div><span class="status-pill">свободен</span></div>
+              <div class="plot-card"><div><strong>Участок №30</strong><br><span>12,5 соток</span></div><span class="status-pill">свободен</span></div>
+            </div>
+            <div class="note-box">Если нужного участка нет в списке, он может быть забронирован или продан. Актуальное наличие лучше уточнить перед просмотром.</div>
+            <div style="margin-top: 24px; display: grid; gap: 10px;">
+              <a class="btn btn-primary" href="https://wa.me/70000000000?text=Здравствуйте!%20Хочу%20уточнить%20участки%20в%20Талом">Уточнить участки в Талом</a>
+              <a class="btn btn-outline" href="tel:+70000000000">Позвонить</a>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="details">
+      <div class="container">
+        <div class="section-head">
+          <div><div class="section-label">О территории</div><h2>Что можно указать здесь</h2></div>
+          <p class="section-subtitle">Этот блок лучше заполнить реальными данными: дорога, расстояние, коммуникации, назначение земли, условия просмотра.</p>
+        </div>
+        <div class="details-grid">
+          <div class="detail-card"><h3>Расположение</h3><p>Краткое описание направления, дороги, времени в пути и ближайших ориентиров. Позже заменим на точную информацию.</p></div>
+          <div class="detail-card"><h3>Участки</h3><p>Можно указать диапазон площадей, особенности планировки, наличие подъезда и удобство выбора по карте.</p></div>
+          <div class="detail-card"><h3>Условия покупки</h3><p>Здесь можно кратко написать про оплату, рассрочку, бронь и порядок оформления сделки.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-head">
+          <div><div class="section-label">Порядок действий</div><h2>Как выбрать участок</h2></div>
+          <p class="section-subtitle">На странице территории лучше оставить простой сценарий: карта, уточнение наличия, просмотр и оформление.</p>
+        </div>
+        <div class="buy-steps">
+          <div class="step"><h3>Смотрите карту</h3><p>Откройте схему территории и выберите подходящее расположение участка.</p></div>
+          <div class="step"><h3>Проверяете статус</h3><p>Сравните цвет участка на карте и список свободных вариантов рядом.</p></div>
+          <div class="step"><h3>Связываетесь</h3><p>Напишите или позвоните, чтобы уточнить актуальное наличие и условия.</p></div>
+          <div class="step"><h3>Едете смотреть</h3><p>Договариваемся о просмотре, обсуждаем оплату, рассрочку и оформление.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta" id="contacts">
+      <div class="container">
+        <div class="cta-box">
+          <div>
+            <h2>Интересует участок в Талом?</h2>
+            <p>Напишите нам — подскажем, какие участки свободны, какие забронированы, и какие условия покупки доступны сейчас.</p>
+          </div>
+          <div class="cta-actions">
+            <a class="btn btn-primary" href="https://wa.me/70000000000?text=Здравствуйте!%20Интересует%20участок%20в%20Талом">WhatsApp</a>
+            <a class="btn btn-outline" href="tel:+70000000000" style="color: #fff; border-color: rgba(255,255,255,.35);">Позвонить</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <strong>Земельные участки</strong>
+        <p>Страница территории «Талое». Все цены, статусы и условия уточняются по телефону.</p>
+        <small>© 2026. Заменить на название компании / ИП.</small>
+      </div>
+      <div><strong>Контакты</strong><br><a href="tel:+70000000000">+7 000 000-00-00</a><br><a href="mailto:info@example.ru">info@example.ru</a></div>
+      <div><strong>Навигация</strong><br><a href="index.html">Главная</a><br><a href="index.html#territories">Все территории</a><br><a href="#plots">Карта Талого</a></div>
+    </div>
+  </footer>
+</body>
+</html>
