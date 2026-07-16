@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Талое — Земельные участки 24</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="container header">
+      <a class="brand" href="index.html" aria-label="На главную">
+        <span class="brand-mark">З</span>
+        <span>Земельные участки 24</span>
+      </a>
+
+      <nav class="nav" aria-label="Основная навигация">
+        <a href="index.html#territories">Территории</a>
+        <a href="#plots">Участки</a>
+        <a href="#details">О территории</a>
+        <a href="#media">Фото и видео</a>
+        <a href="#contacts">Контакты</a>
+      </nav>
+
+      <div class="header-contacts">
+        <a class="phone" href="tel:+79130302525">+7 (913) 030 25 25</a>
+        <a class="btn btn-primary" href="https://t.me/Anatoliy_777" target="_blank" rel="noopener">Telegram</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="territory-hero">
+      <div class="container territory-hero-inner">
+        <div>
+          <div class="breadcrumbs">
+            <a href="index.html">Главная</a><span>/</span><a href="index.html#territories">Территории</a><span>/</span><span>Талое</span>
+          </div>
+          <span class="eyebrow">Территория · Красноярский край</span>
+          <h1>Земельные участки в Талом</h1>
+          <p class="hero-text">
+            Территория примерно в 60 км от Красноярска. Время в пути — около 40 минут. На странице представлена карта участков и список свободных вариантов.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#plots">Смотреть карту</a>
+            <a class="btn btn-outline" href="#contacts">Уточнить наличие</a>
+          </div>
+        </div>
+
+        <aside class="hero-side-card">
+          <h2>Кратко о территории</h2>
+          <div class="quick-info">
+            <div class="quick-info-item"><span>Расстояние</span><strong>60 км от Красноярска</strong></div>
+            <div class="quick-info-item"><span>Время в пути</span><strong>около 40 минут</strong></div>
+            <div class="quick-info-item"><span>Площадь участков</span><strong>от 4 до 20 соток</strong></div>
+            <div class="quick-info-item"><span>Свободных участков</span><strong data-plots-count="free">64</strong></div>
+          </div>
+          <p>Подъезд, электричество и назначение земли уточняются перед просмотром.</p>
+          <div class="status-legend">
+            <span><i class="dot dot-free"></i> свободен</span>
+            <span><i class="dot dot-booked"></i> бронь</span>
+            <span><i class="dot dot-sold"></i> продан</span>
+          </div>
+        </aside>
+      </div>
+    </section>
+    <section class="section" id="plots">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <div class="section-label">Карта участков</div>
+            <h2>Талое на карте</h2>
+          </div>
+          <p class="section-subtitle">На карте можно посмотреть расположение участков. В списке рядом указаны номер, площадь, кадастровый номер и стоимость.</p>
+        </div>
+
+        <div class="map-layout">
+          <div class="map-box">
+            <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A00ebe042f9d7cf3c2051f16edc0384bdf3df770fd3e47b949a8b67c3f0e64c43&amp;source=constructor" loading="lazy" title="Карта участков в Талом"></iframe>
+          </div>
+
+          <aside class="panel">
+            <h3>Свободные участки</h3>
+            <div class="available-top">
+              <span class="available-count" data-plots-count-label="free">64 свободных</span>
+              <span style="color: var(--muted); font-size: 13px;">Талое</span>
+            </div>
+            <div class="available-list" data-plots-source="site-data/taloe.json" data-statuses="free">
+              <p class="plot-list-state">Загрузка участков…</p>
+            </div>
+            <div class="note-box">Перед просмотром и оформлением уточните актуальный статус, стоимость, подъезд, электричество и назначение земли по телефону или в Telegram.</div>
+            <div style="margin-top: 24px; display: grid; gap: 10px;">
+              <a class="btn btn-primary" href="https://t.me/Anatoliy_777" target="_blank" rel="noopener">Уточнить участки в Талом</a>
+              <a class="btn btn-outline" href="tel:+79130302525">Позвонить</a>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="details">
+      <div class="container">
+        <div class="section-head">
+          <div><div class="section-label">О территории</div><h2>Основная информация</h2></div>
+          <p class="section-subtitle">Точные данные по дороге, коммуникациям и назначению земли лучше уточнять перед выездом на просмотр.</p>
+        </div>
+        <div class="details-grid">
+          <div class="detail-card"><h3>Расположение</h3><p>Территория находится примерно в 60 км от Красноярска. Ориентировочное время в пути — около 40 минут.</p></div>
+          <div class="detail-card"><h3>Участки</h3><p>Площади — от 4 до 20 соток, по каждому участку указан кадастровый номер. Стоимость — от 19 350 до 102 600 ₽.</p></div>
+          <div class="detail-card"><h3>Условия</h3><p>Подъезд, электричество, назначение земли, рассрочка и порядок оформления уточняются индивидуально.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="media">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <div class="section-label">Фото и видео</div>
+            <h2>Обзор Талого</h2>
+          </div>
+        </div>
+
+        <div class="media-grid">
+          <div class="media-card">
+            <div class="media-placeholder">Фото</div>
+            <h3>Вид на территорию</h3>
+            <p>Общее фото территории с земли или с высоты.</p>
+          </div>
+          <div class="media-card">
+            <div class="media-placeholder">Фото</div>
+            <h3>Подъезд к участкам</h3>
+            <p>Здесь можно показать дорогу, ориентиры и состояние подъезда.</p>
+          </div>
+          <div class="media-card media-card-wide">
+            <div class="media-placeholder video-placeholder">▶ Видео</div>
+            <h3>Облёт с квадрокоптера</h3>
+            <p>Видеообзор территории Талое.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-head">
+          <div><div class="section-label">Порядок действий</div><h2>Как выбрать участок</h2></div>
+          <p class="section-subtitle">Выберите участок на карте, уточните актуальность данных и договоритесь о просмотре.</p>
+        </div>
+        <div class="buy-steps">
+          <div class="step"><h3>Смотрите карту</h3><p>Откройте схему территории и выберите подходящее расположение участка.</p></div>
+          <div class="step"><h3>Проверяете данные</h3><p>Сравните номер участка, площадь, кадастровый номер и стоимость в списке.</p></div>
+          <div class="step"><h3>Связываетесь</h3><p>Напишите в Telegram или позвоните, чтобы уточнить актуальный статус.</p></div>
+          <div class="step"><h3>Едете смотреть</h3><p>Договариваемся о просмотре, обсуждаем условия оплаты и оформление.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta" id="contacts">
+      <div class="container">
+        <div class="cta-box">
+          <div>
+            <h2>Интересует участок в Талом?</h2>
+            <p>Напишите нам — подскажем по свободным участкам, стоимости, просмотру и условиям покупки.</p>
+          </div>
+          <div class="cta-actions">
+            <a class="btn btn-primary" href="https://t.me/Anatoliy_777" target="_blank" rel="noopener">Написать в Telegram</a>
+            <a class="btn btn-outline" href="tel:+79130302525" style="color: #fff; border-color: rgba(255,255,255,.35);">Позвонить</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <strong>Земельные участки 24</strong>
+        <p>Страница территории «Талое». Регион: Красноярский край, окрестности Красноярска. Все цены, статусы и условия уточняются перед сделкой.</p>
+        <small>© 2026. Земельные участки 24</small>
+      </div>
+      <div><strong>Контакты</strong><br><a href="tel:+79130302525">+7 (913) 030 25 25</a><br><a href="https://t.me/Anatoliy_777" target="_blank" rel="noopener">Telegram</a><br><span>Email: заглушка</span></div>
+      <div><strong>Навигация</strong><br><a href="index.html">Главная</a><br><a href="index.html#territories">Все территории</a><br><a href="#plots">Карта Талого</a><br><a href="#media">Фото и видео</a></div>
+    </div>
+  </footer>
+
+  <div class="mobile-contact-bar" aria-label="Быстрые контакты">
+    <a href="tel:+79130302525">Позвонить</a>
+    <a href="https://t.me/Anatoliy_777" target="_blank" rel="noopener">Telegram</a>
+  </div>
+  <script src="plots.js" defer></script>
+</body>
+</html>
