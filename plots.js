@@ -157,7 +157,7 @@
         .then((data) => (containersBySource.get(source) || []).forEach((container) => renderList(container, data)))
         .catch((error) => {
           console.error("Не удалось загрузить данные участков:", error);
-          (containersBySource.get(source) || []).forEach((container) => showState(container, "Не удалось загрузить список участков. Обновите страницу или уточните наличие по телефону.", "plot-list-error"));
+          (containersBySource.get(source) || []).forEach((container) => showState(container, "Не удалось обновить список. Попробуйте ещё раз чуть позже или уточните наличие по телефону.", "plot-list-error"));
         })
         .finally(() => (containersBySource.get(source) || []).forEach((container) => container.setAttribute("aria-busy", "false")));
     });
