@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Земельные участки в Талом: интерактивная карта, площади, кадастровые номера, статусы и стоимость." />
-  <title>Талое — Земельные участки 24</title>
+  <meta name="description" content="Земельные участки в Лопатино: интерактивная карта, площади, кадастровые номера, статусы и стоимость." />
+  <title>Лопатино — Земельные участки 24</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -31,10 +31,10 @@
     <section class="territory-hero">
       <div class="container territory-hero-inner">
         <div>
-          <div class="breadcrumbs"><a href="index.html">Главная</a><span>/</span><a href="index.html#territories">Территории</a><span>/</span><span>Талое</span></div>
+          <div class="breadcrumbs"><a href="index.html">Главная</a><span>/</span><a href="index.html#territories">Территории</a><span>/</span><span>Лопатино</span></div>
           <span class="eyebrow">Территория · Красноярский край</span>
-          <h1>Земельные участки в Талом</h1>
-          <p class="hero-text">Территория примерно в 60 км от Красноярска. На странице представлена интерактивная карта и автоматически обновляемый список свободных участков.</p>
+          <h1>Земельные участки в Лопатино</h1>
+          <p class="hero-text">Небольшая группа участков в направлении Лопатино. Карта позволяет быстро оценить их расположение, а список автоматически показывает актуально свободные варианты.</p>
           <div class="hero-actions">
             <a class="btn btn-primary" href="#plots">Смотреть карту</a>
             <a class="btn btn-outline" href="#contacts">Уточнить наличие</a>
@@ -43,10 +43,10 @@
         <aside class="hero-side-card">
           <h2>Кратко о территории</h2>
           <div class="quick-info">
-            <div class="quick-info-item"><span>Расстояние</span><strong>около 60 км от Красноярска</strong></div>
-            <div class="quick-info-item"><span>Время в пути</span><strong>около 40 минут</strong></div>
-            <div class="quick-info-item"><span>Всего участков</span><strong data-plots-count="total" data-plots-count-source="site-data/taloe.json">88</strong></div>
-            <div class="quick-info-item"><span>Свободных</span><strong data-plots-count="free" data-plots-count-source="site-data/taloe.json">64</strong></div>
+            <div class="quick-info-item"><span>Расстояние</span><strong>около 35–40 км от Красноярска</strong></div>
+            <div class="quick-info-item"><span>Время в пути</span><strong>около 45–60 минут</strong></div>
+            <div class="quick-info-item"><span>Всего участков</span><strong data-plots-count="total" data-plots-count-source="site-data/lopatino.json">11</strong></div>
+            <div class="quick-info-item"><span>Свободных</span><strong data-plots-count="free" data-plots-count-source="site-data/lopatino.json">2</strong></div>
           </div>
           <p>Расстояние и время указаны ориентировочно. Подъезд, коммуникации и назначение земли уточняются перед просмотром.</p>
           <div class="status-legend">
@@ -61,25 +61,25 @@
     <section class="section" id="plots">
       <div class="container">
         <div class="section-head">
-          <div><div class="section-label">Карта участков</div><h2>Талое на карте</h2></div>
+          <div><div class="section-label">Карта участков</div><h2>Лопатино на карте</h2></div>
           <p class="section-subtitle">Карта показывает расположение и статус участков. В списке указаны номер, площадь, кадастровый номер и стоимость.</p>
         </div>
         <div class="map-layout">
           <div class="map-box">
-            <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Af0bb7733eeea39d02a6ce37f0d9d14b52783da0f51c9c0b5068d890d35b0f226&amp;source=constructor" data-yandex-map="taloe" loading="lazy" title="Карта участков: Талое"></iframe>
+            <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A44671a03830f47572e25e2d98f981be2fb3c1048d51a7392b4bc0631b5a76c08&amp;source=constructor" data-yandex-map="lopatino" loading="lazy" title="Карта участков: Лопатино"></iframe>
           </div>
           <aside class="panel">
             <h3>Свободные участки</h3>
             <div class="available-top">
-              <span class="available-count" data-plots-count-label="free" data-plots-count-label-source="site-data/taloe.json">64 свободных</span>
-              <span style="color: var(--muted); font-size: 13px;">Талое</span>
+              <span class="available-count" data-plots-count-label="free" data-plots-count-label-source="site-data/lopatino.json">2 свободных</span>
+              <span style="color: var(--muted); font-size: 13px;">Лопатино</span>
             </div>
-            <div class="available-list" data-plots-source="site-data/taloe.json" data-statuses="free" data-empty-message="Свободных участков сейчас нет. Уточните возможные изменения статуса по телефону или в Telegram.">
+            <div class="available-list" data-plots-source="site-data/lopatino.json" data-statuses="free" data-empty-message="Свободных участков сейчас нет. Уточните возможные изменения статуса по телефону или в Telegram.">
               <p class="plot-list-state">Загрузка участков…</p>
             </div>
             <div class="note-box">Статусы и цены формируются из рабочей таблицы. Перед просмотром подтвердите актуальность выбранного участка.</div>
             <div style="margin-top: 24px; display: grid; gap: 10px;">
-              <a class="btn btn-primary" href="https://t.me/Anatoliy_777" target="_blank" rel="noopener">Уточнить участки в Талом</a>
+              <a class="btn btn-primary" href="https://t.me/Anatoliy_777" target="_blank" rel="noopener">Уточнить участки в Лопатино</a>
               <a class="btn btn-outline" href="tel:+79130302525">Позвонить</a>
             </div>
           </aside>
@@ -94,16 +94,16 @@
           <p class="section-subtitle">Маршрут, состояние подъезда и характеристики конкретного участка лучше подтвердить перед выездом.</p>
         </div>
         <div class="details-grid">
-          <div class="detail-card"><h3>Расположение</h3><p>Территория находится примерно в 60 км от Красноярска. Ориентировочное время в пути — около 40 минут. Расчёт ориентировочный и зависит от точки старта.</p></div>
+          <div class="detail-card"><h3>Расположение</h3><p>До территории — ориентировочно 35–40 км от Красноярска. Время поездки лучше закладывать около 45–60 минут с учётом выбранного маршрута. Расчёт ориентировочный и зависит от точки старта.</p></div>
           <div class="detail-card"><h3>Участки</h3><p>Площади и кадастровые номера подгружаются автоматически. Если цена свободного участка не задана, в списке отображается «договорная».</p></div>
-          <div class="detail-card"><h3>Особенности</h3><p>Спокойное загородное направление для тех, кто рассматривает землю для личных планов, отдыха или долгосрочного владения. Точные условия подъезда и подключения коммуникаций уточняются индивидуально.</p></div>
+          <div class="detail-card"><h3>Особенности</h3><p>Компактная территория удобна для быстрого сравнения соседних участков и выбора подходящего расположения. Точные условия подъезда и подключения коммуникаций уточняются индивидуально.</p></div>
         </div>
       </div>
     </section>
 
     <section class="section" id="media">
       <div class="container">
-        <div class="section-head"><div><div class="section-label">Фото и видео</div><h2>Обзор Талого</h2></div></div>
+        <div class="section-head"><div><div class="section-label">Фото и видео</div><h2>Обзор Лопатино</h2></div></div>
         <div class="media-grid">
           <div class="media-card"><div class="media-placeholder">Фото</div><h3>Общий вид территории</h3><p>Место для фотографии территории с земли или с высоты.</p></div>
           <div class="media-card"><div class="media-placeholder">Фото</div><h3>Подъезд и окружение</h3><p>Здесь можно показать дорогу, ориентиры и ближайшее окружение.</p></div>
@@ -129,16 +129,16 @@
 
     <section class="cta" id="contacts">
       <div class="container"><div class="cta-box">
-        <div><h2>Интересует участок в Талом?</h2><p>Напишите нам — подскажем по свободным участкам, стоимости, просмотру и условиям покупки.</p></div>
+        <div><h2>Интересует участок в Лопатино?</h2><p>Напишите нам — подскажем по свободным участкам, стоимости, просмотру и условиям покупки.</p></div>
         <div class="cta-actions"><a class="btn btn-primary" href="https://t.me/Anatoliy_777" target="_blank" rel="noopener">Написать в Telegram</a><a class="btn btn-outline" href="tel:+79130302525" style="color: #fff; border-color: rgba(255,255,255,.35);">Позвонить</a></div>
       </div></div>
     </section>
   </main>
 
   <footer class="footer"><div class="container footer-grid">
-    <div><strong>Земельные участки 24</strong><p>Страница территории «Талое». Все расстояния, цены, статусы и условия уточняются перед сделкой.</p><small>© 2026. Земельные участки 24</small></div>
+    <div><strong>Земельные участки 24</strong><p>Страница территории «Лопатино». Все расстояния, цены, статусы и условия уточняются перед сделкой.</p><small>© 2026. Земельные участки 24</small></div>
     <div><strong>Контакты</strong><br><a href="tel:+79130302525">+7 (913) 030 25 25</a><br><a href="https://t.me/Anatoliy_777" target="_blank" rel="noopener">Telegram</a><br><span>Email: заглушка</span></div>
-    <div><strong>Навигация</strong><br><a href="index.html">Главная</a><br><a href="index.html#territories">Все территории</a><br><a href="#plots">Карта Талого</a><br><a href="#media">Фото и видео</a></div>
+    <div><strong>Навигация</strong><br><a href="index.html">Главная</a><br><a href="index.html#territories">Все территории</a><br><a href="#plots">Карта Лопатино</a><br><a href="#media">Фото и видео</a></div>
   </div></footer>
   <div class="mobile-contact-bar" aria-label="Быстрые контакты">
     <a href="tel:+79130302525">Позвонить</a>

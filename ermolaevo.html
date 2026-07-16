@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Земельные участки в Ермолаево: три интерактивные карты, кадастровые номера, статусы и стоимость." />
+  <title>Ермолаево — Земельные участки 24</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="container header">
+      <a class="brand" href="index.html" aria-label="На главную">
+        <span class="brand-mark">З</span>
+        <span>Земельные участки 24</span>
+      </a>
+      <nav class="nav" aria-label="Основная навигация">
+        <a href="index.html#territories">Территории</a>
+        <a href="#plots">Участки</a>
+        <a href="#details">О территории</a>
+        <a href="#media">Фото и видео</a>
+        <a href="#contacts">Контакты</a>
+      </nav>
+      <div class="header-contacts">
+        <a class="phone" href="tel:+79130302525">+7 (913) 030 25 25</a>
+        <a class="btn btn-primary" href="https://t.me/Anatoliy_777" target="_blank" rel="noopener">Telegram</a>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section class="territory-hero"><div class="container territory-hero-inner">
+      <div>
+        <div class="breadcrumbs"><a href="index.html">Главная</a><span>/</span><a href="index.html#territories">Территории</a><span>/</span><span>Ермолаево</span></div>
+        <span class="eyebrow">Территория · три группы участков</span>
+        <h1>Земельные участки в Ермолаево</h1>
+        <p class="hero-text">Для удобного просмотра территория разделена на левую, правую и нижнюю группы. У каждой группы своя карта и отдельный список свободных участков.</p>
+        <div class="hero-actions"><a class="btn btn-primary" href="#left">Левая группа</a><a class="btn btn-outline" href="#right">Правая</a><a class="btn btn-outline" href="#bottom">Нижняя</a></div>
+      </div>
+      <aside class="hero-side-card">
+        <h2>Кратко о территории</h2>
+        <div class="quick-info">
+          <div class="quick-info-item"><span>Расстояние</span><strong>около 35–40 км</strong></div>
+          <div class="quick-info-item"><span>Время в пути</span><strong>около 35–45 минут</strong></div>
+          <div class="quick-info-item"><span>Групп участков</span><strong>3</strong></div>
+          <div class="quick-info-item"><span>Свободных всего</span><strong data-plots-count-aggregate="free" data-plots-aggregate-sources="site-data/ermolaevo_levoe.json,site-data/ermolaevo_pravoe.json,site-data/ermolaevo_nizhnee.json">47</strong></div>
+        </div>
+        <p>Расстояние и время ориентировочные. Точные условия подъезда, коммуникаций и оформления уточняются перед просмотром.</p>
+        <div class="status-legend"><span><i class="dot dot-free"></i> свободен</span><span><i class="dot dot-booked"></i> бронь</span><span><i class="dot dot-sold"></i> продан</span></div>
+      </aside>
+    </div></section>
+
+    <section class="section" id="plots"><div class="container">
+      <div class="section-head"><div><div class="section-label">Карты участков</div><h2>Выберите часть территории</h2></div><p class="section-subtitle">Разделение на три группы упрощает просмотр большого массива участков и помогает быстрее найти нужный номер.</p></div>
+      <div class="hero-actions" style="margin-bottom: 0;"><a class="btn btn-outline" href="#left">Левая группа</a><a class="btn btn-outline" href="#right">Правая группа</a><a class="btn btn-outline" href="#bottom">Нижняя группа</a></div>
+    </div></section>
+
+    <section class="section" id="left">
+      <div class="container">
+        <div class="section-head">
+          <div><div class="section-label">Ермолаево · группа 1</div><h2>Левая группа</h2></div>
+          <p class="section-subtitle">Левая часть территории: отдельная карта и собственный автоматически обновляемый список участков.</p>
+        </div>
+        <div class="map-layout">
+          <div class="map-box"><iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Ae456829ecbe734ff043afa2321f7a93aeeef7f04ca220a1874807cdbf1b4520a&amp;source=constructor" data-yandex-map="ermolaevo-left" loading="lazy" title="Ермолаево: левая группа"></iframe></div>
+          <aside class="panel">
+            <h3>Свободные участки</h3>
+            <div class="available-top">
+              <span class="available-count" data-plots-count-label="free" data-plots-count-label-source="site-data/ermolaevo_levoe.json">6 свободных</span>
+              <span style="color: var(--muted); font-size: 13px;">Левая группа</span>
+            </div>
+            <div class="available-list" data-plots-source="site-data/ermolaevo_levoe.json" data-statuses="free" data-empty-message="Свободных участков в этой группе сейчас нет. Уточните изменения статуса по телефону или в Telegram."><p class="plot-list-state">Загрузка участков…</p></div>
+            <div class="note-box">Всего в группе: <strong data-plots-count="total" data-plots-count-source="site-data/ermolaevo_levoe.json">13</strong>. Перед выездом подтвердите статус выбранного участка.</div>
+            <div style="margin-top: 24px; display: grid; gap: 10px;"><a class="btn btn-primary" href="https://t.me/Anatoliy_777" target="_blank" rel="noopener">Уточнить эту группу</a><a class="btn btn-outline" href="tel:+79130302525">Позвонить</a></div>
+          </aside>
+        </div>
+      </div>
+    </section>
+    <section class="section" id="right" style="background: var(--sand);">
+      <div class="container">
+        <div class="section-head">
+          <div><div class="section-label">Ермолаево · группа 2</div><h2>Правая группа</h2></div>
+          <p class="section-subtitle">Правая часть территории: отдельная карта и собственный автоматически обновляемый список участков.</p>
+        </div>
+        <div class="map-layout">
+          <div class="map-box"><iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A96dadc3ec2f7f451d1bfac0260ca1bd72779125cb3a7a3d53ec946bc758e20dc&amp;source=constructor" data-yandex-map="ermolaevo-right" loading="lazy" title="Ермолаево: правая группа"></iframe></div>
+          <aside class="panel">
+            <h3>Свободные участки</h3>
+            <div class="available-top">
+              <span class="available-count" data-plots-count-label="free" data-plots-count-label-source="site-data/ermolaevo_pravoe.json">3 свободных</span>
+              <span style="color: var(--muted); font-size: 13px;">Правая группа</span>
+            </div>
+            <div class="available-list" data-plots-source="site-data/ermolaevo_pravoe.json" data-statuses="free" data-empty-message="Свободных участков в этой группе сейчас нет. Уточните изменения статуса по телефону или в Telegram."><p class="plot-list-state">Загрузка участков…</p></div>
+            <div class="note-box">Всего в группе: <strong data-plots-count="total" data-plots-count-source="site-data/ermolaevo_pravoe.json">11</strong>. Перед выездом подтвердите статус выбранного участка.</div>
+            <div style="margin-top: 24px; display: grid; gap: 10px;"><a class="btn btn-primary" href="https://t.me/Anatoliy_777" target="_blank" rel="noopener">Уточнить эту группу</a><a class="btn btn-outline" href="tel:+79130302525">Позвонить</a></div>
+          </aside>
+        </div>
+      </div>
+    </section>
+    <section class="section" id="bottom">
+      <div class="container">
+        <div class="section-head">
+          <div><div class="section-label">Ермолаево · группа 3</div><h2>Нижняя группа</h2></div>
+          <p class="section-subtitle">Нижняя часть территории: отдельная карта и собственный автоматически обновляемый список участков.</p>
+        </div>
+        <div class="map-layout">
+          <div class="map-box"><iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Accfdbf61c70980e8dc4c6e4d09909b017c996ab30b9047ab1f569b8d22ea55b8&amp;source=constructor" data-yandex-map="ermolaevo-bottom" loading="lazy" title="Ермолаево: нижняя группа"></iframe></div>
+          <aside class="panel">
+            <h3>Свободные участки</h3>
+            <div class="available-top">
+              <span class="available-count" data-plots-count-label="free" data-plots-count-label-source="site-data/ermolaevo_nizhnee.json">38 свободных</span>
+              <span style="color: var(--muted); font-size: 13px;">Нижняя группа</span>
+            </div>
+            <div class="available-list" data-plots-source="site-data/ermolaevo_nizhnee.json" data-statuses="free" data-empty-message="Свободных участков в этой группе сейчас нет. Уточните изменения статуса по телефону или в Telegram."><p class="plot-list-state">Загрузка участков…</p></div>
+            <div class="note-box">Всего в группе: <strong data-plots-count="total" data-plots-count-source="site-data/ermolaevo_nizhnee.json">49</strong>. Перед выездом подтвердите статус выбранного участка.</div>
+            <div style="margin-top: 24px; display: grid; gap: 10px;"><a class="btn btn-primary" href="https://t.me/Anatoliy_777" target="_blank" rel="noopener">Уточнить эту группу</a><a class="btn btn-outline" href="tel:+79130302525">Позвонить</a></div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="details"><div class="container">
+      <div class="section-head"><div><div class="section-label">О территории</div><h2>Основная информация</h2></div><p class="section-subtitle">Все три группы относятся к одному направлению, но отображаются раздельно для удобства выбора.</p></div>
+      <div class="details-grid">
+        <div class="detail-card"><h3>Расположение</h3><p>Ориентировочное расстояние от Красноярска — 35–40 км, время в пути — около 35–45 минут. Фактический маршрут зависит от точки выезда.</p></div>
+        <div class="detail-card"><h3>Три группы</h3><p>Левая, правая и нижняя части имеют отдельные карты и JSON-файлы. Статусы и цены каждой группы обновляются независимо.</p></div>
+        <div class="detail-card"><h3>Выбор участка</h3><p>Сравните расположение на карте, затем проверьте площадь, кадастровый номер и цену в списке выбранной группы.</p></div>
+      </div>
+    </div></section>
+
+    <section class="section" id="media"><div class="container">
+      <div class="section-head"><div><div class="section-label">Фото и видео</div><h2>Обзор Ермолаево</h2></div></div>
+      <div class="media-grid"><div class="media-card"><div class="media-placeholder">Фото</div><h3>Общий вид территории</h3><p>Панорамный вид на три группы участков.</p></div><div class="media-card"><div class="media-placeholder">Фото</div><h3>Подъезды к группам</h3><p>Место для фотографий дорог и ориентиров.</p></div><div class="media-card media-card-wide"><div class="media-placeholder video-placeholder">▶ Видео</div><h3>Облёт территории</h3><p>Видео поможет показать взаимное расположение всех трёх групп.</p></div></div>
+    </div></section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-head">
+          <div><div class="section-label">Порядок действий</div><h2>Как выбрать участок</h2></div>
+          <p class="section-subtitle">Сравните варианты на карте, проверьте данные в списке и договоритесь о просмотре.</p>
+        </div>
+        <div class="buy-steps">
+          <div class="step"><h3>Смотрите карту</h3><p>Оцените расположение участка относительно соседних участков и границ территории.</p></div>
+          <div class="step"><h3>Проверяете данные</h3><p>Сравните номер, площадь, кадастровый номер, статус и стоимость в списке.</p></div>
+          <div class="step"><h3>Связываетесь</h3><p>Напишите в Telegram или позвоните, чтобы подтвердить актуальность выбранного варианта.</p></div>
+          <div class="step"><h3>Едете смотреть</h3><p>Договоритесь о просмотре и уточните условия оплаты, рассрочки и оформления.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta" id="contacts"><div class="container"><div class="cta-box"><div><h2>Интересует участок в Ермолаево?</h2><p>Назовите группу и номер участка — подскажем актуальный статус, стоимость и условия просмотра.</p></div><div class="cta-actions"><a class="btn btn-primary" href="https://t.me/Anatoliy_777" target="_blank" rel="noopener">Написать в Telegram</a><a class="btn btn-outline" href="tel:+79130302525" style="color: #fff; border-color: rgba(255,255,255,.35);">Позвонить</a></div></div></div></section>
+  </main>
+  <footer class="footer"><div class="container footer-grid"><div><strong>Земельные участки 24</strong><p>Страница территории «Ермолаево». Все расстояния, цены, статусы и условия уточняются перед сделкой.</p><small>© 2026. Земельные участки 24</small></div><div><strong>Контакты</strong><br><a href="tel:+79130302525">+7 (913) 030 25 25</a><br><a href="https://t.me/Anatoliy_777" target="_blank" rel="noopener">Telegram</a><br><span>Email: заглушка</span></div><div><strong>Навигация</strong><br><a href="index.html">Главная</a><br><a href="index.html#territories">Все территории</a><br><a href="#left">Левая группа</a><br><a href="#right">Правая группа</a><br><a href="#bottom">Нижняя группа</a></div></div></footer>
+  <div class="mobile-contact-bar" aria-label="Быстрые контакты">
+    <a href="tel:+79130302525">Позвонить</a>
+    <a href="https://t.me/Anatoliy_777" target="_blank" rel="noopener">Telegram</a>
+  </div>
+  <script src="plots.js" defer></script>
+</body>
+</html>
