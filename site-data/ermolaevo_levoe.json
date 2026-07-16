@@ -1,0 +1,161 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-16T22:15:14Z",
+  "complete": true,
+  "errors": 0,
+  "territory": {
+    "name": "Ермолаево — левое",
+    "slug": "ermolaevo_levoe"
+  },
+  "counts": {
+    "total": 13,
+    "free": 6,
+    "booked": 0,
+    "sold": 7
+  },
+  "plots": [
+    {
+      "number": "1",
+      "cadastralNumber": "24:04:0301001:10983",
+      "status": "free",
+      "statusText": "свободен",
+      "areaM2": 618,
+      "areaSotki": 6.18,
+      "pricePerM2": 100,
+      "totalPrice": 61800,
+      "priceText": "61 800 ₽"
+    },
+    {
+      "number": "2",
+      "cadastralNumber": "24:04:0301001:10984",
+      "status": "free",
+      "statusText": "свободен",
+      "areaM2": 617,
+      "areaSotki": 6.17,
+      "pricePerM2": 100,
+      "totalPrice": 61700,
+      "priceText": "61 700 ₽"
+    },
+    {
+      "number": "3",
+      "cadastralNumber": "24:04:0301001:3150",
+      "status": "free",
+      "statusText": "свободен",
+      "areaM2": 1035,
+      "areaSotki": 10.35,
+      "pricePerM2": 100,
+      "totalPrice": 103500,
+      "priceText": "103 500 ₽"
+    },
+    {
+      "number": "4",
+      "cadastralNumber": "24:04:0301001:3152",
+      "status": "free",
+      "statusText": "свободен",
+      "areaM2": 1241,
+      "areaSotki": 12.41,
+      "pricePerM2": 100,
+      "totalPrice": 124100,
+      "priceText": "124 100 ₽"
+    },
+    {
+      "number": "5",
+      "cadastralNumber": "24:04:0301001:3179",
+      "status": "free",
+      "statusText": "свободен",
+      "areaM2": 1666,
+      "areaSotki": 16.66,
+      "pricePerM2": 100,
+      "totalPrice": 166600,
+      "priceText": "166 600 ₽"
+    },
+    {
+      "number": "6",
+      "cadastralNumber": "24:04:0301001:3181",
+      "status": "free",
+      "statusText": "свободен",
+      "areaM2": 1601,
+      "areaSotki": 16.01,
+      "pricePerM2": 100,
+      "totalPrice": 160100,
+      "priceText": "160 100 ₽"
+    },
+    {
+      "number": "7",
+      "cadastralNumber": "24:04:0301001:10470",
+      "status": "sold",
+      "statusText": "продан",
+      "areaM2": 2345,
+      "areaSotki": 23.45,
+      "pricePerM2": null,
+      "totalPrice": null,
+      "priceText": null
+    },
+    {
+      "number": "8",
+      "cadastralNumber": "24:04:0301001:3182",
+      "status": "sold",
+      "statusText": "продан",
+      "areaM2": 1041,
+      "areaSotki": 10.41,
+      "pricePerM2": null,
+      "totalPrice": null,
+      "priceText": null
+    },
+    {
+      "number": "9",
+      "cadastralNumber": "24:04:0301001:3147",
+      "status": "sold",
+      "statusText": "продан",
+      "areaM2": 1005,
+      "areaSotki": 10.05,
+      "pricePerM2": null,
+      "totalPrice": null,
+      "priceText": null
+    },
+    {
+      "number": "10",
+      "cadastralNumber": "24:04:0301001:3146",
+      "status": "sold",
+      "statusText": "продан",
+      "areaM2": 1136,
+      "areaSotki": 11.36,
+      "pricePerM2": null,
+      "totalPrice": null,
+      "priceText": null
+    },
+    {
+      "number": "11",
+      "cadastralNumber": "24:04:0301001:3148",
+      "status": "sold",
+      "statusText": "продан",
+      "areaM2": 1178,
+      "areaSotki": 11.78,
+      "pricePerM2": null,
+      "totalPrice": null,
+      "priceText": null
+    },
+    {
+      "number": "12",
+      "cadastralNumber": "24:04:0301001:3151",
+      "status": "sold",
+      "statusText": "продан",
+      "areaM2": 1548,
+      "areaSotki": 15.48,
+      "pricePerM2": null,
+      "totalPrice": null,
+      "priceText": null
+    },
+    {
+      "number": "13",
+      "cadastralNumber": "24:04:0301001:3149",
+      "status": "sold",
+      "statusText": "продан",
+      "areaM2": 1331,
+      "areaSotki": 13.31,
+      "pricePerM2": null,
+      "totalPrice": null,
+      "priceText": null
+    }
+  ]
+}

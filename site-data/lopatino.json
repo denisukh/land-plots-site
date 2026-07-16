@@ -1,0 +1,139 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-16T22:15:17Z",
+  "complete": true,
+  "errors": 0,
+  "territory": {
+    "name": "Лопатино",
+    "slug": "lopatino"
+  },
+  "counts": {
+    "total": 11,
+    "free": 2,
+    "booked": 0,
+    "sold": 9
+  },
+  "plots": [
+    {
+      "number": "1",
+      "cadastralNumber": "24:04:0107003:508",
+      "status": "free",
+      "statusText": "свободен",
+      "areaM2": 38200,
+      "areaSotki": 382,
+      "pricePerM2": null,
+      "totalPrice": null,
+      "priceText": "договорная"
+    },
+    {
+      "number": "2",
+      "cadastralNumber": "24:04:0107003:509",
+      "status": "free",
+      "statusText": "свободен",
+      "areaM2": 38200,
+      "areaSotki": 382,
+      "pricePerM2": null,
+      "totalPrice": null,
+      "priceText": "договорная"
+    },
+    {
+      "number": "3",
+      "cadastralNumber": "24:04:0107003:582",
+      "status": "sold",
+      "statusText": "продан",
+      "areaM2": 39406,
+      "areaSotki": 394.06,
+      "pricePerM2": null,
+      "totalPrice": null,
+      "priceText": null
+    },
+    {
+      "number": "4",
+      "cadastralNumber": "24:04:0107003:515",
+      "status": "sold",
+      "statusText": "продан",
+      "areaM2": 12698,
+      "areaSotki": 126.98,
+      "pricePerM2": null,
+      "totalPrice": null,
+      "priceText": null
+    },
+    {
+      "number": "5",
+      "cadastralNumber": "24:04:0107003:587",
+      "status": "sold",
+      "statusText": "продан",
+      "areaM2": 39932,
+      "areaSotki": 399.32,
+      "pricePerM2": null,
+      "totalPrice": null,
+      "priceText": null
+    },
+    {
+      "number": "6",
+      "cadastralNumber": "24:04:0107003:586",
+      "status": "sold",
+      "statusText": "продан",
+      "areaM2": 40000,
+      "areaSotki": 400,
+      "pricePerM2": null,
+      "totalPrice": null,
+      "priceText": null
+    },
+    {
+      "number": "7",
+      "cadastralNumber": "24:04:0107003:585",
+      "status": "sold",
+      "statusText": "продан",
+      "areaM2": 40000,
+      "areaSotki": 400,
+      "pricePerM2": null,
+      "totalPrice": null,
+      "priceText": null
+    },
+    {
+      "number": "8",
+      "cadastralNumber": "24:04:0107003:584",
+      "status": "sold",
+      "statusText": "продан",
+      "areaM2": 40000,
+      "areaSotki": 400,
+      "pricePerM2": null,
+      "totalPrice": null,
+      "priceText": null
+    },
+    {
+      "number": "9",
+      "cadastralNumber": "24:04:0107003:583",
+      "status": "sold",
+      "statusText": "продан",
+      "areaM2": 40000,
+      "areaSotki": 400,
+      "pricePerM2": null,
+      "totalPrice": null,
+      "priceText": null
+    },
+    {
+      "number": "10",
+      "cadastralNumber": "24:04:0107003:589",
+      "status": "sold",
+      "statusText": "продан",
+      "areaM2": 39406,
+      "areaSotki": 394.06,
+      "pricePerM2": null,
+      "totalPrice": null,
+      "priceText": null
+    },
+    {
+      "number": "11",
+      "cadastralNumber": "24:04:0107003:513",
+      "status": "sold",
+      "statusText": "продан",
+      "areaM2": 38200,
+      "areaSotki": 382,
+      "pricePerM2": null,
+      "totalPrice": null,
+      "priceText": null
+    }
+  ]
+}

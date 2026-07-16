@@ -1,0 +1,139 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-16T22:15:10Z",
+  "complete": true,
+  "errors": 0,
+  "territory": {
+    "name": "Устюг",
+    "slug": "ustyug"
+  },
+  "counts": {
+    "total": 11,
+    "free": 4,
+    "booked": 0,
+    "sold": 7
+  },
+  "plots": [
+    {
+      "number": "1",
+      "cadastralNumber": "24:11:0310205:383",
+      "status": "free",
+      "statusText": "свободен",
+      "areaM2": 30000,
+      "areaSotki": 300,
+      "pricePerM2": null,
+      "totalPrice": null,
+      "priceText": "договорная"
+    },
+    {
+      "number": "2",
+      "cadastralNumber": "24:11:0310205:384",
+      "status": "free",
+      "statusText": "свободен",
+      "areaM2": 24970,
+      "areaSotki": 249.7,
+      "pricePerM2": null,
+      "totalPrice": null,
+      "priceText": "договорная"
+    },
+    {
+      "number": "3",
+      "cadastralNumber": "24:11:0310205:385",
+      "status": "free",
+      "statusText": "свободен",
+      "areaM2": 26530,
+      "areaSotki": 265.3,
+      "pricePerM2": null,
+      "totalPrice": null,
+      "priceText": "договорная"
+    },
+    {
+      "number": "4",
+      "cadastralNumber": "24:11:0310205:386",
+      "status": "free",
+      "statusText": "свободен",
+      "areaM2": 30000,
+      "areaSotki": 300,
+      "pricePerM2": null,
+      "totalPrice": null,
+      "priceText": "договорная"
+    },
+    {
+      "number": "5",
+      "cadastralNumber": "24:11:0310205:67",
+      "status": "sold",
+      "statusText": "продан",
+      "areaM2": 112800,
+      "areaSotki": 1128,
+      "pricePerM2": null,
+      "totalPrice": null,
+      "priceText": null
+    },
+    {
+      "number": "6",
+      "cadastralNumber": "24:11:0310205:68",
+      "status": "sold",
+      "statusText": "продан",
+      "areaM2": 112400,
+      "areaSotki": 1124,
+      "pricePerM2": null,
+      "totalPrice": null,
+      "priceText": null
+    },
+    {
+      "number": "7",
+      "cadastralNumber": "24:11:0310205:64",
+      "status": "sold",
+      "statusText": "продан",
+      "areaM2": 112200,
+      "areaSotki": 1122,
+      "pricePerM2": null,
+      "totalPrice": null,
+      "priceText": null
+    },
+    {
+      "number": "8",
+      "cadastralNumber": "24:11:0310205:62",
+      "status": "sold",
+      "statusText": "продан",
+      "areaM2": 114200,
+      "areaSotki": 1142,
+      "pricePerM2": null,
+      "totalPrice": null,
+      "priceText": null
+    },
+    {
+      "number": "9",
+      "cadastralNumber": "24:11:0310205:61",
+      "status": "sold",
+      "statusText": "продан",
+      "areaM2": 114500,
+      "areaSotki": 1145,
+      "pricePerM2": null,
+      "totalPrice": null,
+      "priceText": null
+    },
+    {
+      "number": "10",
+      "cadastralNumber": "24:11:0310205:66",
+      "status": "sold",
+      "statusText": "продан",
+      "areaM2": 113300,
+      "areaSotki": 1133,
+      "pricePerM2": null,
+      "totalPrice": null,
+      "priceText": null
+    },
+    {
+      "number": "11",
+      "cadastralNumber": "24:11:0310205:69",
+      "status": "sold",
+      "statusText": "продан",
+      "areaM2": 113100,
+      "areaSotki": 1131,
+      "pricePerM2": null,
+      "totalPrice": null,
+      "priceText": null
+    }
+  ]
+}

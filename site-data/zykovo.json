@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-16T22:15:17Z",
+  "complete": true,
+  "errors": 0,
+  "territory": {
+    "name": "Зыково",
+    "slug": "zykovo"
+  },
+  "counts": {
+    "total": 0,
+    "free": 0,
+    "booked": 0,
+    "sold": 0
+  },
+  "plots": []
+}
