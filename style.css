@@ -594,3 +594,56 @@ h2 { font-size: clamp(32px, 4.6vw, 54px); line-height: 1; letter-spacing: -0.05e
     background: var(--orange);
   }
 }
+/* Автоматический список участков */
+.plot-card-side {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 8px;
+  text-align: right;
+  white-space: nowrap;
+}
+
+.plot-list-state,
+.plot-list-warning {
+  padding: 16px;
+  border-radius: 18px;
+  background: var(--sand);
+  color: var(--muted);
+  font-size: 14px;
+}
+
+.plot-list-error {
+  color: #8b2f2f;
+  background: #f8e9e7;
+}
+
+.plot-list-warning {
+  color: var(--brown);
+  margin-bottom: 10px;
+}
+
+.status-pill-booked {
+  color: #8a551e;
+  border-color: rgba(217, 139, 58, 0.35);
+  background: #fff7ed;
+}
+
+.status-pill-sold {
+  color: #666;
+  border-color: rgba(144, 144, 144, 0.35);
+  background: #f4f4f4;
+}
+
+@media (max-width: 480px) {
+  .plot-card {
+    grid-template-columns: 1fr;
+  }
+
+  .plot-card-side {
+    align-items: flex-start;
+    text-align: left;
+    white-space: normal;
+  }
+}
+
