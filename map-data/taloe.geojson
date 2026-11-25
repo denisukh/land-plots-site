@@ -40,15 +40,15 @@
         ]
       },
       "properties": {
-        "description": "<b>Номер участка:</b> 1<br><b>Статус:</b> свободен<br><b>Площадь:</b> 612 м²<br><b>Кадастровый номер:</b> 24:11:0300305:1389<br><b>Стоимость:</b> 30 600 ₽",
-        "hintContent": "Участок 1 — свободен: 24:11:0300305:1389",
-        "fill": "#3f6f52",
-        "fill-opacity": 0.34,
-        "stroke": "#244332",
-        "stroke-width": "2",
-        "stroke-opacity": 0.88,
-        "status": "free",
-        "statusText": "свободен"
+        "description": "<b>Номер участка:</b> 1<br><b>Статус:</b> забронирован<br><b>Площадь:</b> 612 м²<br><b>Кадастровый номер:</b> 24:11:0300305:1389",
+        "hintContent": "Участок 1 — забронирован: 24:11:0300305:1389",
+        "fill": "#d98b3a",
+        "fill-opacity": 0.42,
+        "stroke": "#b96d22",
+        "stroke-width": "1.5",
+        "stroke-opacity": 0.72,
+        "status": "booked",
+        "statusText": "забронирован"
       }
     },
     {
