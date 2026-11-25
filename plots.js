@@ -4,6 +4,7 @@
   const STATUS_ORDER = { free: 0, booked: 1, sold: 2 };
   const dataBySource = new Map();
   let allSources = new Set();
+  const selectedBySource = new Map();
 
   function formatNumber(value, maximumFractionDigits = 0) {
     if (value === null || value === undefined || value === "") return "";
@@ -79,6 +80,7 @@
   function renderPlot(plot) {
     const card = document.createElement("div");
     card.className = `plot-card plot-card-${plot.status || "free"}`;
+    card.dataset.cadastralNumber = String(plot.cadastralNumber || '').trim();
 
     const main = document.createElement("div");
     main.appendChild(makeTextElement("strong", `Участок №${plot.number}`));
@@ -114,10 +116,53 @@
       return;
     }
     const fragment = document.createDocumentFragment();
-    visible.forEach((plot) => fragment.appendChild(renderPlot(plot)));
+    visible.forEach((plot) => {
+      const card = renderPlot(plot);
+      const root = [...document.querySelectorAll('[data-land-map]')].find(map => map.dataset.listSource === container.dataset.plotsSource);
+      if (root && plot.cadastralNumber) {
+        const button = makeTextElement('button','На карте','plot-map-link');
+        button.type = 'button';
+        button.disabled = root.dataset.mapReady !== 'true';
+        button.setAttribute('aria-label',`Показать участок №${plot.number} на карте`);
+        const focus = () => {
+          if(root.dataset.mapReady !== 'true')return;
+          root.dispatchEvent(new CustomEvent('land-map-focus',{detail:{cadastralNumber:String(plot.cadastralNumber)}}));
+        };
+        button.addEventListener('click',event=>{event.stopPropagation();focus();});
+        card.addEventListener('click',focus);
+        card.classList.add('plot-card-linked');
+        card.querySelector('.plot-card-side').append(button);
+      }
+      fragment.appendChild(card);
+    });
     container.replaceChildren(fragment);
     if (data.complete === false) {
       container.prepend(makeTextElement("p", "Часть данных временно не обновилась. Показана последняя успешно полученная информация.", "plot-list-warning"));
+    }
+    syncSelection(container, selectedBySource.get(container.dataset.plotsSource));
+  }
+
+  // Прокручиваем только внутренний список, не всю страницу.
+  function syncSelection(list, cadastralNumber) {
+    let selected = null;
+    for (const card of list.querySelectorAll('.plot-card-linked')) {
+      const active = Boolean(cadastralNumber) && card.dataset.cadastralNumber === cadastralNumber;
+      card.classList.toggle('plot-card-selected', active);
+      if (active) { card.setAttribute('aria-current','true'); selected = card; }
+      else card.removeAttribute('aria-current');
+    }
+    if (!selected) { if(list.scrollHeight > list.clientHeight)list.scrollTo({top:list.scrollTop,behavior:'instant'}); return; }
+    if (list.scrollHeight <= list.clientHeight) return;
+    const viewport = list.getBoundingClientRect();
+    const rect = selected.getBoundingClientRect();
+    const top = viewport.top + list.clientTop;
+    const bottom = top + list.clientHeight;
+    if (rect.top < top + 4 || rect.bottom > bottom - 4) {
+      const target = list.scrollTop + rect.top - top - (list.clientHeight - rect.height) / 2;
+      list.scrollTo({top: Math.max(0, target), behavior: 'smooth'});
+    } else {
+      // Останавливаем предыдущую анимацию при быстром переключении.
+      list.scrollTo({top:list.scrollTop, behavior:'instant'});
     }
   }
 
@@ -140,6 +185,20 @@
     return sources;
   }
 
+  document.addEventListener('land-map-ready',event=>{
+    for(const list of document.querySelectorAll('[data-plots-source]')){
+      if(list.dataset.plotsSource===event.detail.source)list.querySelectorAll('.plot-map-link').forEach(button=>button.disabled=false);
+    }
+  });
+  document.addEventListener('land-map-selection',event=>{
+    const source = event.detail?.source;
+    if (!source) return;
+    const cad = String(event.detail.cadastralNumber || '').trim();
+    selectedBySource.set(source,cad);
+    for(const list of document.querySelectorAll('[data-plots-source]')){
+      if(list.dataset.plotsSource===source)syncSelection(list,cad);
+    }
+  });
   document.addEventListener("DOMContentLoaded", () => {
     allSources = collectSources();
     const containersBySource = new Map();

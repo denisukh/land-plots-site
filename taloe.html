@@ -6,6 +6,9 @@
   <meta name="description" content="Земельные участки в Талом: интерактивная карта, площади, кадастровые номера, статусы и стоимость." />
   <title>Талое — Земельные участки 24</title>
   <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="land-map.css" />
+  <script src="map-api-config.js" defer></script>
+  <script src="land-map.js" defer></script>
   <link rel="icon" href="assets/logo.webp" type="image/webp" />
 </head>
 <body>
@@ -63,12 +66,10 @@
       <div class="container">
         <div class="section-head">
           <div><div class="section-label">Карта участков</div><h2>Талое на карте</h2></div>
-          <p class="section-subtitle">Карта показывает расположение и статус участков. В списке указаны номер, площадь, кадастровый номер и стоимость.</p>
+          <p class="section-subtitle">Нажмите на участок на карте или выберите его в списке, чтобы увидеть расположение, характеристики и стоимость.</p>
         </div>
         <div class="map-layout">
-          <div class="map-box">
-            <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A39e0f564aa189702c4a7dcc120c4454b868c67e0644c86d4206e76609ee1c79b&amp;source=constructor" data-yandex-map="taloe" loading="lazy" title="Карта участков: Талое"></iframe>
-          </div>
+          <div data-land-map data-source="map-data/taloe.geojson" data-list-source="site-data/taloe.json" data-map-type="yandex#hybrid"></div>
           <aside class="panel">
             <h3>Свободные участки</h3>
             <div class="available-top">

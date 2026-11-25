@@ -6,6 +6,9 @@
   <meta name="description" content="Земельные участки в Погорелке: интерактивная карта, площади, кадастровые номера, статусы и стоимость." />
   <title>Погорелка — Земельные участки 24</title>
   <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="land-map.css" />
+  <script src="map-api-config.js" defer></script>
+  <script src="land-map.js" defer></script>
   <link rel="icon" href="assets/logo.webp" type="image/webp" />
 </head>
 <body>
@@ -66,9 +69,7 @@
           <p class="section-subtitle">Карта показывает расположение и статус участков. В списке указаны номер, площадь, кадастровый номер и стоимость.</p>
         </div>
         <div class="map-layout">
-          <div class="map-box">
-            <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A7a5e85ee62d66fe1cfbb9ce700753f0d16c9811a36dadd69daa97c7752e868f8&amp;source=constructor" data-yandex-map="pogorelka" loading="lazy" title="Карта участков: Погорелка"></iframe>
-          </div>
+          <div data-land-map data-source="map-data/pogorelka.geojson" data-list-source="site-data/pogorelka.json" data-map-type="yandex#hybrid"></div>
           <aside class="panel">
             <h3>Свободные участки</h3>
             <div class="available-top">
